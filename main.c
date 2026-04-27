@@ -2,10 +2,12 @@
 
 int main() {
     char nome[50];
+    char continuar;
     int rm;
     float nota1, nota2, presenca, media;
     int situacao;
 
+do {
     printf("BEM VINDO AO SISTEMA DE NOTAS FIAP...\n");
     printf("VAMOS COMECAR\n");
     printf("PAINEL DE NOTAS\n");
@@ -57,5 +59,12 @@ do {
             printf("Erro na verificacao\n");
     }
 
-    return 0;
+    printf("\nDeseja cadastrar outro aluno? (s/n): ");
+    scanf(" %c", &continuar);
+
+} while (continuar == 's' || continuar == 'S');
+
+printf("Sistema encerrado.\n");
+
+return 0;
 }
