@@ -17,6 +17,7 @@ int main() {
 
 
     media = (nota1 + nota2) / 2;
+    printf("Média geral: " [media]);
 
     if (media >= 6) {
         printf("Aluno aprovado\n");
