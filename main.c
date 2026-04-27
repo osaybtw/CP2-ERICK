@@ -1,14 +1,16 @@
 #include <stdio.h> 
 
 int main() {
+    float nota1, nota2, presenca, media;
     
-    float nota1, nota2, media;
-
+    printf("     PAINEL DE NOTAS MANEIRAS   \n");
     printf("Digite a primeira nota: ");
         scanf("%f", &nota1);
-
     printf("Digite a segunda nota: ");
         scanf("%f", &nota2);
+    printf("Digite a sua frequencia (0 a 100): ");
+        scanf("%f", &presenca);
+
 
     media = (nota1 + nota2) / 2;
 
