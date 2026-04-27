@@ -13,17 +13,19 @@ int main() {
     printf("Digite a sua frequencia (0 a 100): ");
         scanf("%f", &presenca);
     printf("    -------------------------     \n");
-
-
+    
 
     media = (nota1 + nota2) / 2;
-    printf("Média geral: " [media]);
+    printf("Média geral: %.2f\n", media); 
 
-    if (media >= 6) {
-        printf("Aluno aprovado\n");
+
+    if (media >= 6 && presenca > 66) {
+      printf("Aluno aprovado\n");
     } else {
         printf("Aluno reprovado\n");
-    }
-
+    } 
+    
+ 
+    
     return 0;
 }
