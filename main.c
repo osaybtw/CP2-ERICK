@@ -37,7 +37,7 @@ int main() {
 
     switch (situacao) {
         case 1:
-            printf("Aluno aprovado\n");
+           printf("Aluno aprovado!\n");
             break;
 
         case 2:
