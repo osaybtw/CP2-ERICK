@@ -33,7 +33,6 @@ int main() {
         scanf("%f", &presenca);
         
         if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100) {
-        scanf("%f", &presenca);
         printf("Valores invalidos! Digite notas de 0 a 10 e frequencia de 0 a 100.\n");
     }
 } while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100);
