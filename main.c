@@ -8,6 +8,7 @@ int main() {
     printf("VAMOS COMECAR\n");
     printf("PAINEL DE NOTAS\n");
 
+do {
     printf("Digite a primeira nota: ");
     scanf("%f", &nota1);
 
@@ -19,8 +20,8 @@ int main() {
 
     if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100) {
         printf("Valores invalidos! Digite notas de 0 a 10 e frequencia de 0 a 100.\n");
-        return 0;
     }
+} while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100);
 
     printf("-------------------------\n");
 
