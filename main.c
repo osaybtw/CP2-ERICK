@@ -1,11 +1,11 @@
 #include <stdio.h> 
 
 int main() {
-    float nota1, nota2, presenca, media;
+    float nota1, nota2, presenca, media, nome;
     
     printf(" BEM VINDO AO SISTEMA DE NOTAS FIAP... \n");
     printf(" VAMOS COMECAR   \n");
-    printf("     PAINEL DE NOTAS MANEIRAS   \n");
+    printf("     PAINEL DE NOTAS     \n");
     printf("Digite a primeira nota: ");
         scanf("%f", &nota1);
     printf("Digite a segunda nota: ");
@@ -16,7 +16,9 @@ int main() {
     
 
     media = (nota1 + nota2) / 2;
-    printf("Média geral: %.2f\n", media); 
+    printf("Media geral: %.2f\n", media); 
+
+    printf(" ------------------------ \n");
 
 
     if (media >= 6 && presenca > 66) {
