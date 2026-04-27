@@ -3,32 +3,37 @@
 int main() {
     char nome[50];
     char continuar;
+    int idade;
     int rm;
     float nota1, nota2, presenca, media;
     int situacao;
 
-do {
-    printf("BEM VINDO AO SISTEMA DE NOTAS FIAP...\n");
-    printf("VAMOS COMECAR\n");
-    printf("PAINEL DE NOTAS\n");
+    do {
+        printf("BEM VINDO AO SISTEMA DE NOTAS FIAP...\n");
+        printf("VAMOS COMECAR\n");
+        printf("PAINEL DE NOTAS\n");
 
-    printf("Digite seu nome: ");
-    scanf("%s", nome);
+        printf("Digite seu nome: ");
+        scanf("%s", nome);
 
-    printf("Digite seu RM: ");
-    scanf("%d", &rm);
+        printf("Digite sua idade: ");
+        scanf("%d", &idade);
 
-do {
-    printf("Digite a primeira nota: ");
-    scanf("%f", &nota1);
+        printf("Digite seu RM: ");
+        scanf("%d", &rm);
 
-    printf("Digite a segunda nota: ");
-    scanf("%f", &nota2);
+    do {
+        printf("Digite a primeira nota: ");
+        scanf("%f", &nota1);
 
-    printf("Digite a sua frequencia (0 a 100): ");
-    scanf("%f", &presenca);
+        printf("Digite a segunda nota: ");
+        scanf("%f", &nota2);
 
-    if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100) {
+        printf("Digite a sua frequencia (0 a 100): ");
+        scanf("%f", &presenca);
+        
+        if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100) {
+        scanf("%f", &presenca);
         printf("Valores invalidos! Digite notas de 0 a 10 e frequencia de 0 a 100.\n");
     }
 } while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || presenca < 0 || presenca > 100);
@@ -37,7 +42,7 @@ do {
 
     media = (nota1 + nota2) / 2;
 
-    printf("%s %d -> Media geral: %.2f\n", nome, rm, media);
+    printf(" Nome: %s\n Idade: %d\n RM: %d\n Media geral: %.2f\n", nome, idade, rm, media);
     printf("-------------------------\n");
 
     if (media >= 6 && presenca > 66) {
